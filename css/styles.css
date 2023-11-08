@@ -1,0 +1,206 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
+}
+
+.navbar {
+    position: sticky;
+    font-size: large;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    z-index: 1;
+}
+  
+li {
+    display: inline-block;
+}
+  
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a{
+    transition: .1s ease-in-out;
+}
+li a:hover {
+    transform: scale(1.2);
+}
+
+/*.active {
+    background-color: #04AA6D;
+}
+*/
+
+#home{
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#home .name{
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+    margin-right: 100px;
+    
+}
+
+#home .pic {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.contacts img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    left: 310px;
+    transition: .1s ease-in-out;
+}
+
+.contacts img:hover{
+    transform: scale(1.5);
+}
+
+#aboutme{
+    text-align: center;
+}
+
+#aboutme table{
+    border: 2px solid #23455b;
+    border-collapse: collapse;
+    background-color: #7797b8;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 12px #23455b, -1px -1px 8px #23455b
+}
+
+#aboutme tr{
+    transition: all .1s ease-in;
+    cursor: pointer;
+}
+
+#aboutme tr:hover{
+    background-color: #7797b8;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px #23455b, -1px -1px 8px #23455b;
+}
+
+#aboutme td, th{
+    width: 50%;
+    color: white;
+    padding: 12px;
+    
+}
+
+#aboutme td{
+    font-style: italic; 
+}
+
+section{
+    margin-top: 200px;
+    text-align: center;
+}
+
+section .animate{
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1s;
+}
+section.show-animate .animate{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.college .animate{
+    width: 400px;
+    height: 400px;
+    margin-right: 200px;
+}
+
+.college .animate{
+    transform: translateX(-100%);
+}
+
+.college.show-animate .animate{
+    transform: translateX(0);
+}
+
+section .animate2{
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1s;
+}
+section.show-animate .animate2{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.college .animate2{
+    transform: translateX(100%);
+}
+
+.college.show-animate .animate2{
+    transform: translateX(0);
+}
+
+.college h1{
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+}
+
+.schedule{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.schedule img{
+    transition: all .1s ease-in;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.schedule img:hover{
+    background-color: #0a0d10;
+    transform: scale(1.02);
+}
+
+#address{
+    text-align: center;
+    margin-top: 300px;
+}
+
+#video{
+    text-align: center;
+    margin-top: 200px;
+}
+
+#audio{
+    text-align: center;
+    margin-top: 200px;
+    height: 600px;
+}

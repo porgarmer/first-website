@@ -33,6 +33,21 @@
         </form>
     </div>
     <p id="test"></p>
-   
+    <script>
+        function auth() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if(username == "rono" && password == "12345"){
+                window.location.assign("index.html");
+                alert("Welcome, rono");
+                return false;
+            }
+            else{
+                alert("Invalid information");
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
